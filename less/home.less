@@ -1,0 +1,83 @@
+
+@width0: 100%; 
+@height0: 100%;
+
+body {
+	background-color: #000000;
+}
+#landing-header {
+	padding-top: 40vh;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	h1 {
+		color: #ffffff;
+	}
+}
+.slideshow {
+	height: @height0;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: @width0;
+	z-index: 0;
+	li {
+		animation: imageAnimation 50s linear infinite;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: @height0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: @width0;
+		z-index: 0;
+		&:nth-child(1) {
+			background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages%2FyTkr9Xq9c.jpg&f=1);
+		}
+		&:nth-child(2) {
+			animation-delay: 10s;
+			background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbeautifulcoolwallpapers.files.wordpress.com%2F2011%2F08%2Funder_the_world_by_thesaladman.jpg&f=1);
+		}
+		&:nth-child(3) {
+			animation-delay: 20s;
+			background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-kENydl50IlE%2FT0UDiDrHbrI%2FAAAAAAAAIzk%2FqCtEwu8ElQs%2Fs1600%2Fcoolest-best-latest-new-fun-tech-gadgets-coolest-wallpaper-ever.jpg&f=1);
+		}
+		&:nth-child(4) {
+			animation-delay: 30s;
+			background-image: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fastronomyisawesome.com%2Fwp-content%2Fuploads%2F2015%2F08%2Fcool-facts-about-earth-ocean.jpg&f=1);
+		}
+		&:nth-child(5) {
+			animation-delay: 40s;
+			background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthewallpaper.co%2Fwp-content%2Fuploads%2F2016%2F01%2Fhd-wild-life-photos-best-friends-high-resolution-backgrounds-lovely-animals-hairy-claws-amazing-eyes-cool-1697x1199.jpg&f=1);
+		}
+	}
+}
+
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	10% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+}
+.no-cssanimations {
+	.slideshow {
+		li {
+			opacity: 1;
+		}
+	}
+}
