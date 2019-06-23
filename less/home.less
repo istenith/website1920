@@ -1,41 +1,61 @@
-
-@width0: 100%; 
-@height0: 100%;
-
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Montserrat:700&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-	background-color: #000000;
+	background-color: #000;
 }
 #landing-header {
-	padding-top: 40vh;
 	position: relative;
-	text-align: center;
+	width: 100vw;
+	height: 100vh;
 	z-index: 1;
+	background: rgba(0, 0, 0, 0.7);
+	h1, h2 {
+		color: #fff;
+	}
 	h1 {
-		color: #ffffff;
+		font-family: 'Monserrat', sans-serif;
+		font-size: 100px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	h2 {
+		font-family: 'bungee hairline', sans-serif;
+		font-size: 30px;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 .slideshow {
-	height: @height0;
-	left: 0;
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
-	width: @width0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
 	z-index: 0;
 	li {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: inherit;
+		height: inherit;
+		z-index: 0;
+
 		animation: imageAnimation 50s linear infinite;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: @height0;
-		left: 0;
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		width: @width0;
-		z-index: 0;
 		&:nth-child(1) {
 			background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages%2FyTkr9Xq9c.jpg&f=1);
 		}
