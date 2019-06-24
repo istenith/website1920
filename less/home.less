@@ -20,7 +20,8 @@ body {
 	background-color: #000;
 }
 #landing-header {
-	position: relative;
+	position: absolute;
+	top: 0;
 	width: 100vw;
 	height: 100vh;
 
@@ -29,8 +30,7 @@ body {
 	.row {
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translateY(-50%);
 
 		align-items: center;
 		justify-content: center;
@@ -38,12 +38,12 @@ body {
 		width: 100%;
 		img {
 			height: 192px;
-			padding: 0 24px;
+			padding: 0 12px;
 		}
 	}
 	.col {
 		font-size: 100px;
-
+		padding: 0 12px;
 		h1, h2 {
 			color: #fff;
 		}
