@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+.ui.fluid.container{
+	margin:0 0 0 1rem;
+	.heading{
+		text-align: center;
+		font-size: 65px;
+		margin-top:70px;
+		margin-bottom: 50px;
+		padding:10px;
+		color: #1b1c1d;
+		font-family: 'Dm Serif Text',serif;
+	}
+	.ui.fluid.link.cards{
+		display: -webkit-inline-box;
+		.card{
+			margin:15px;
+			opacity:0.678;
+			transition:0.5s;
+			min-width:15%;
+		}
+		.card:hover{
+			opacity:1;
+			margin:20px;
+			border-width:15px;
+			border-style: double; 
+			border-color: #1b1c1d;
+			min-width: 20%;
+			z-index: 1;
+			position: relative;
+		}
+	}
+	.ui.fluid.link.cards:hover{
+		margin:20px;
+	}
+	.horizontal.scroll{
+		overflow-x:scroll;
+	}
+}
+
+
+::-webkit-scrollbar{
+	display:none;
+}

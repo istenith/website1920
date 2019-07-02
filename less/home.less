@@ -16,9 +16,7 @@
 .col:extend(.flex) {
 	flex-direction: column;
 }
-body {
-	background-color: #000;
-}
+
 #landing-header {
 	position: absolute;
 	top: 0;
@@ -26,7 +24,7 @@ body {
 	height: 100vh;
 
 	z-index: 1;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.3);
 	.row {
 		position: absolute;
 		top: 50%;
@@ -61,7 +59,7 @@ body {
 }
 .slideshow {
 	list-style: none;
-	position: absolute;
+	position: static;
 	top: 0;
 	left: 0;
 	width: 100vw;
