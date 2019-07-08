@@ -1,7 +1,8 @@
+extends /pug/bases/header.pug
 
-include /pug/bases/header.pug
-include /pug/pages/home.pug
-include /pug/pages/intro.pug
-include /pug/pages/events.pug
-include /pug/pages/coporate.pug
-include /pug/bases/footer.pug
+block content
+	include /pug/components/home.pug
+	include /pug/components/intro.pug
+	include /pug/components/events.pug
+	include /pug/components/corporate.pug
+	include /pug/bases/footer.pug
