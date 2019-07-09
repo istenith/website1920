@@ -1,52 +1,50 @@
-extends /pug/bases/header.pug
-
-block headelms
-	link(rel="stylesheet" href="styles/event.min.css" type="text/css")
-
-block content
-	.ui.fluid.container
-		.heading EVENTS ORGANISED
-		.horizontal.scroll
-			.ui.fluid.link.cards
-				.card
+.ui.fluid.container
+	.heading EVENTS ORGANISED
+	.horizontal.scroll
+		.ui.fluid.link.cards
+			-
+				var events = [
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'Past',
+						'class': 'past',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'Past',
+						'class': 'past',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'Past',
+						'class': 'past',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'future',
+						'class': 'future',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'future',
+						'class': 'future',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+					{
+						'image':'resources/images/iste-event-placeholder.jpeg',
+						'title':'future',
+						'class': 'future',
+						'desc' :'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error'
+					},
+				]
+			for event in events
+				.event(class=event.class)
 					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Past
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Past
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Past
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Upcoming
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Upcoming
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Upcoming
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
-				.card
-					.image
-						img(src = '../resources/images/iste-event-placeholder.jpeg')
-					.content
-						.header Test Card
-						.description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam ut voluptates dolor soluta aut, eum impedit enim iure error.
+						img(src = event.image)
+					.info
+						.header= event.title
+						.description!= event.des 

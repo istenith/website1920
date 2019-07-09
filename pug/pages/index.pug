@@ -1,8 +1,15 @@
 extends /pug/bases/header.pug
+block headelms
+	link(rel="stylesheet" href="styles/index.min.css" type="text/css")
 
 block content
-	include /pug/components/home.pug
-	include /pug/components/intro.pug
-	include /pug/components/events.pug
-	include /pug/components/corporate.pug
-	include /pug/bases/footer.pug
+	.page
+		include /pug/components/home.pug
+	.page
+		include /pug/components/intro.pug
+	.page
+		include /pug/components/events.pug
+	.page
+		include /pug/components/corporate.pug
+	.page
+		include /pug/components/footer.pug
