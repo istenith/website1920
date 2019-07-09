@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap');
 
 //========= HEADER ===========
@@ -144,3 +145,132 @@
 		}
 	}
 }
+
+
+// ================ CORPORATE ====================
+
+.team.pic{
+	/*TEAM PICTURE WITH DIRECTOR*/
+	margin-top:50px;
+	margin-bottom: 50px;
+    background:url("../resources/images/iste-landscape.jpeg") no-repeat center center fixed;
+    display:table;
+    height:50%;
+    position: relative;
+    width:100%;
+    background-size: cover;
+}
+
+.heading {
+	line-height: 1em;
+}
+.about-us{
+	.content{
+		text-align:justify;
+		text-justify:inter-word;
+		text-indent: 15%;
+		font-size:20px;
+		margin-bottom: 10%;
+	}
+}
+
+.corporate-section{
+	background:url("../resources/images/iste-brick.jpg");
+	background-size: cover;
+	padding: 0.5em;
+	margin-top: 2em;
+	.ui.fluid.centered.raised.three.stackable.cards{
+		.card{
+			background:rgba(0,0,0,0.5);
+			border:1px solid black;
+			margin-top:1em;
+			.content{
+				padding: 1em;
+				* {
+					color: white;
+					text-align: justify;
+				}
+				// img{
+				// 	position: relative;
+				// 	top:0px;
+				// 	left:0px;
+				// }
+				.meta{
+					display:inline;
+					font-size:2em;
+					font-family: 'Bahianita',cursive;
+					text-align: right;
+				}
+				.header{
+					font-size:3em;	
+					font-family: 'Titillium',sans-serif;
+				}
+				.description{
+					font-size:1.5em;
+				}
+			}
+		}
+	}
+}
+
+
+// ========== EVENTS ============
+.ui.fluid.container{
+	margin:0 0 0 1rem;
+	.heading{
+		text-align: center;
+		font-size: 3em;
+		margin:1em auto;
+		color: #1b1c1d;
+		font-family: 'Dm Serif Text',serif;
+	}
+	.ui.fluid.link.cards{
+		display: -webkit-inline-box;
+		.card{
+			margin: 1em auto;
+			opacity:0.678;
+			transition:0.5s;
+			min-width:15%;
+		}
+		.card:hover{
+			opacity:1;
+			border-width:15px;
+			border-style: double; 
+			border-color: #1b1c1d;
+			min-width: 20%;
+			z-index: 1;
+			position: relative;
+		}
+	}
+	// .ui.fluid.link.cards:hover{
+	// 	margin:20px;
+	// }
+	.horizontal.scroll{
+		overflow-x:scroll;
+	}
+}
+
+
+::-webkit-scrollbar{
+	display:none;
+}
+
+
+// =============== FOOTER ==================
+
+.footer{
+	background-color: #1b1c1d;
+	color:whitesmoke;
+	font-size:17px;
+	padding:20px;
+	.follow{
+		font-size:20px;
+	}
+	.contacts{
+		margin-left: 30%;
+		.contact-heading{
+			font-size:20px;
+		}
+	}
+	
+}	
