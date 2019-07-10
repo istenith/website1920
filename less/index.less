@@ -81,28 +81,24 @@
 	position: static;
 	top: 0;
 	left: 0;
-	width: 100vw;
 	height: 100vh;
 	z-index: 0;
 	opacity: 1;
 	transition: opacity 1s;
+	background-size: cover;
 	.fadeOut{
 		opacity: 0;
 	}
 }
 
 
-// ================ CORPORATE ====================
+// ================ ABOUT US ====================
 
-.team.pic {
+.team-pic {
 	/*TEAM PICTURE WITH DIRECTOR*/
-	margin-top: 50px;
-	margin-bottom: 50px;
 	background: url('../resources/images/iste-landscape.jpeg') no-repeat center center fixed;
-	display: table;
-	height: 50%;
+	height: 400px;	
 	position: relative;
-	width: 100%;
 	background-size: cover;
 }
 
@@ -110,50 +106,36 @@
 	line-height: 1em;
 }
 .about-us {
-	.content {
+	.content-card {
 		text-align: justify;
-		text-justify: inter-word;
-		text-indent: 15%;
-		font-size: 20px;
-		margin-bottom: 10%;
+		font-size: 1.2em;
 	}
 }
 
 .corporate-section {
-	background: url('../resources/images/iste-brick.jpg');
-	background-size: cover;
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding: 0.5em;
 	margin-top: 2em;
-	.ui.fluid.centered.raised.three.stackable.cards {
-		.card {
-			background: rgba(0, 0, 0, 0.5);
-			border: 1px solid black;
-			margin-top: 1em;
-			.content {
-				padding: 1em;
-				* {
-					color: white;
-					text-align: justify;
-				}
-				// img{
-				// 	position: relative;
-				// 	top:0px;
-				// 	left:0px;
-				// }
-				.meta {
-					display: inline;
-					font-size: 2em;
-					font-family: 'Bahianita', cursive;
-					text-align: right;
-				}
-				.header {
-					font-size: 3em;
-					font-family: 'Titillium', sans-serif;
-				}
-				.description {
-					font-size: 1.5em;
-				}
-			}
+	.aboutus-card {
+		background: rgba(0, 0, 0, 0.3);
+		width: 80%;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		margin: 2em auto;
+		padding: 1em 1.2em;
+		border-radius: 30px;
+		* {
+			color: #fff;
+			margin: 0.5em 0;
+			line-height: 1.2em;
+		}
+		.title {
+			font-size: 3em;
+		}
+		.description {
+			text-align: justify;
+			font-size: 1.2em;
 		}
 	}
 }
@@ -212,6 +194,18 @@
 		margin-left: 30%;
 		.contact-heading {
 			font-size: 20px;
+		}
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	// ================ ABOUT US =================
+	.corporate-section{
+		padding: 1em auto;
+		.aboutus-card {
+			display: inline-block;
+			margin: 2em;
+			width: 20%;
 		}
 	}
 }

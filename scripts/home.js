@@ -1,5 +1,5 @@
 var images = [
-	'resources/images/iste-day-and-night.jpeg',
+	'resources/images/iste-team.jpeg',
 	'resources/images/iste-ocean.jpeg',
 	'resources/images/iste-tree.jpeg',
 	'resources/images/iste-time.jpeg',
