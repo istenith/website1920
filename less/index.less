@@ -4,25 +4,23 @@
 
 //========= HEADER ===========
 
-.logo{
+.logo {
 	font-family: 'Roboto Slab', serif;
 	font-size: x-large;
 }
 
-
-
 //========== INTRO ============
-.heading{
+.heading {
 	text-align: center;
 	font-size: 4em;
 	margin: 1em auto;
 	color: #1b1c1d;
-	font-family: 'Dm Serif Text',serif;
-}	
-.content{
-	text-align:justify;
-	text-justify:inter-word;
-	font-size:1.25em;
+	font-family: 'Dm Serif Text', serif;
+}
+.content {
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 1.25em;
 }
 
 //========== HOME ============
@@ -79,112 +77,59 @@
 		}
 	}
 }
-.slideshow {
-	list-style: none;
+#slideshow {
 	position: static;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 0;
-	li {
+	opacity: 1;
+	transition: opacity 1s;
+	.fadeOut{
 		opacity: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: inherit;
-		height: inherit;
-		z-index: 0;
-
-		animation: imageAnimation 50s linear infinite;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		&:nth-child(1) {
-			background-image: url('../resources/images/iste-time.jpeg');
-		}
-		&:nth-child(2) {
-			animation-delay: 10s;
-			background-image: url('../resources/images/iste-tree.jpeg');
-		}
-		&:nth-child(3) {
-			animation-delay: 20s;
-			background-image: url('../resources/images/iste-day-and-night.jpeg');
-		}
-		&:nth-child(4) {
-			animation-delay: 30s;
-			background-image: url('../resources/images/iste-ocean.jpeg');
-		}
-		&:nth-child(5) {
-			animation-delay: 40s;
-			background-image: url('../resources/images/iste-cat.jpeg');
-		}
-	}
-}
-
-@keyframes imageAnimation {
-	0% {
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	10% {
-		opacity: 1;
-		animation-timing-function: ease-out;
-	}
-	20% {
-		opacity: 1;
-	}
-	30% {
-		opacity: 0;
-	}
-}
-.no-cssanimations {
-	.slideshow {
-		li {
-			opacity: 1;
-		}
 	}
 }
 
 
 // ================ CORPORATE ====================
 
-.team.pic{
+.team.pic {
 	/*TEAM PICTURE WITH DIRECTOR*/
-	margin-top:50px;
+	margin-top: 50px;
 	margin-bottom: 50px;
-    background:url("../resources/images/iste-landscape.jpeg") no-repeat center center fixed;
-    display:table;
-    height:50%;
-    position: relative;
-    width:100%;
-    background-size: cover;
+	background: url('../resources/images/iste-landscape.jpeg') no-repeat center center fixed;
+	display: table;
+	height: 50%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
 }
 
 .heading {
 	line-height: 1em;
 }
-.about-us{
-	.content{
-		text-align:justify;
-		text-justify:inter-word;
+.about-us {
+	.content {
+		text-align: justify;
+		text-justify: inter-word;
 		text-indent: 15%;
-		font-size:20px;
+		font-size: 20px;
 		margin-bottom: 10%;
 	}
 }
 
-.corporate-section{
-	background:url("../resources/images/iste-brick.jpg");
+.corporate-section {
+	background: url('../resources/images/iste-brick.jpg');
 	background-size: cover;
 	padding: 0.5em;
 	margin-top: 2em;
-	.ui.fluid.centered.raised.three.stackable.cards{
-		.card{
-			background:rgba(0,0,0,0.5);
-			border:1px solid black;
-			margin-top:1em;
-			.content{
+	.ui.fluid.centered.raised.three.stackable.cards {
+		.card {
+			background: rgba(0, 0, 0, 0.5);
+			border: 1px solid black;
+			margin-top: 1em;
+			.content {
 				padding: 1em;
 				* {
 					color: white;
@@ -195,47 +140,46 @@
 				// 	top:0px;
 				// 	left:0px;
 				// }
-				.meta{
-					display:inline;
-					font-size:2em;
-					font-family: 'Bahianita',cursive;
+				.meta {
+					display: inline;
+					font-size: 2em;
+					font-family: 'Bahianita', cursive;
 					text-align: right;
 				}
-				.header{
-					font-size:3em;	
-					font-family: 'Titillium',sans-serif;
+				.header {
+					font-size: 3em;
+					font-family: 'Titillium', sans-serif;
 				}
-				.description{
-					font-size:1.5em;
+				.description {
+					font-size: 1.5em;
 				}
 			}
 		}
 	}
 }
 
-
 // ========== EVENTS ============
-.ui.fluid.container{
-	margin:0 0 0 1rem;
-	.heading{
+.ui.fluid.container {
+	margin: 0 0 0 1rem;
+	.heading {
 		text-align: center;
 		font-size: 3em;
-		margin:1em auto;
+		margin: 1em auto;
 		color: #1b1c1d;
-		font-family: 'Dm Serif Text',serif;
+		font-family: 'Dm Serif Text', serif;
 	}
-	.ui.fluid.link.cards{
+	.ui.fluid.link.cards {
 		display: -webkit-inline-box;
-		.card{
+		.card {
 			margin: 1em auto;
-			opacity:0.678;
-			transition:0.5s;
-			min-width:15%;
+			opacity: 0.678;
+			transition: 0.5s;
+			min-width: 15%;
 		}
-		.card:hover{
-			opacity:1;
-			border-width:15px;
-			border-style: double; 
+		.card:hover {
+			opacity: 1;
+			border-width: 15px;
+			border-style: double;
 			border-color: #1b1c1d;
 			min-width: 20%;
 			z-index: 1;
@@ -245,32 +189,29 @@
 	// .ui.fluid.link.cards:hover{
 	// 	margin:20px;
 	// }
-	.horizontal.scroll{
-		overflow-x:scroll;
+	.horizontal.scroll {
+		overflow-x: scroll;
 	}
 }
 
-
-::-webkit-scrollbar{
-	display:none;
+::-webkit-scrollbar {
+	display: none;
 }
-
 
 // =============== FOOTER ==================
 
-.footer{
+.footer {
 	background-color: #1b1c1d;
-	color:whitesmoke;
-	font-size:17px;
-	padding:20px;
-	.follow{
-		font-size:20px;
+	color: whitesmoke;
+	font-size: 17px;
+	padding: 20px;
+	.follow {
+		font-size: 20px;
 	}
-	.contacts{
+	.contacts {
 		margin-left: 30%;
-		.contact-heading{
-			font-size:20px;
+		.contact-heading {
+			font-size: 20px;
 		}
 	}
-	
-}	
+}
