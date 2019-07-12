@@ -37,13 +37,14 @@
 }
 .row:extend(.flex) {
 	flex-direction: row;
+	z-index: 2;
 }
 .col:extend(.flex) {
 	flex-direction: column;
 }
 
 #landing-header {
-	position: absolute;
+	position: static;
 	top: 0;
 	width: 100vw;
 	height: 100vh;
@@ -78,26 +79,49 @@
 	}
 }
 #slideshow {
-	position: static;
+	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100vh;
-	z-index: 0;
+	width: 100vw;
 	opacity: 1;
-	transition: opacity 1s;
 	background-size: cover;
-	.fadeOut{
+	transition: z-index 1s step-end;
+}
+.visible {
+	opacity: 1;
+	animation: fadeOut 5s;
+	z-index: 1;
+}
+.invisible {
+	opacity: 0;
+	animation: fadeIn 5s;
+	z-index: 0;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
 		opacity: 0;
 	}
 }
-
 
 // ================ ABOUT US ====================
 
 .team-pic {
 	/*TEAM PICTURE WITH DIRECTOR*/
 	background: url('../resources/images/iste-landscape.jpeg') no-repeat center center fixed;
-	height: 400px;	
+	height: 400px;
 	position: relative;
 	background-size: cover;
 }
@@ -113,9 +137,14 @@
 }
 
 .corporate-section {
-	background: #0F2027;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #0f2027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding: 0.5em;
 	margin-top: 2em;
 	.aboutus-card {
@@ -200,7 +229,7 @@
 
 @media only screen and (min-width: 720px) {
 	// ================ ABOUT US =================
-	.corporate-section{
+	.corporate-section {
 		padding: 1em auto;
 		.aboutus-card {
 			display: inline-block;
