@@ -170,44 +170,66 @@
 }
 
 // ========== EVENTS ============
-.ui.fluid.container {
-	margin: 0 0 0 1rem;
-	.heading {
-		text-align: center;
-		font-size: 3em;
-		margin: 1em auto;
-		color: #1b1c1d;
-		font-family: 'Dm Serif Text', serif;
-	}
-	.ui.fluid.link.cards {
-		display: -webkit-inline-box;
-		.card {
-			margin: 1em auto;
-			opacity: 0.678;
-			transition: 0.5s;
-			min-width: 15%;
-		}
-		.card:hover {
-			opacity: 1;
-			border-width: 15px;
-			border-style: double;
-			border-color: #1b1c1d;
-			min-width: 20%;
-			z-index: 1;
-			position: relative;
-		}
-	}
-	// .ui.fluid.link.cards:hover{
-	// 	margin:20px;
-	// }
-	.horizontal.scroll {
+
+.events-organised {
+	margin: 1em 0;
+	.event-cards {
 		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		height: 500px;
+		.past, .future {
+			margin: 0 1em;
+			display: inline-block;				
+			img {
+				display: inline-block;
+				height: 400px;
+			}			
+		}
 	}
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
+// .ui.fluid.container {
+// 	margin: 0 0 0 1rem;
+// 	height: 500px;
+// 	.heading {
+// 		text-align: center;
+// 		font-size: 3em;
+// 		margin: 1em auto;
+// 		color: #1b1c1d;
+// 		font-family: 'Dm Serif Text', serif;
+// 	}
+// 	.ui.fluid.link.cards {
+// 		overflow-x: scroll;
+// 		display: -webkit-inline-box;
+// 		.past, .future {
+// 			overflow-x: scroll;
+// 			float: left;
+// 			transition: 0.5s;
+// 			img {
+// 				height: 200px;
+// 				border: 2px solid black;
+// 				width: fit-content;
+//  			}
+// 		}
+// 		.card:hover {
+// 			opacity: 1;
+// 			border-width: 15px;
+// 			border-style: double;
+// 			border-color: #1b1c1d;
+// 			min-width: 20%;
+// 			z-index: 1;
+// 			position: relative;
+// 		}
+// 	}
+// 	// .ui.fluid.link.cards:hover{
+// 	// 	margin:20px;
+// 	// }
+// }
+// 
+// ::-webkit-scrollbar {
+	// display: none;
+// }
 
 // =============== FOOTER ==================
 
