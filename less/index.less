@@ -120,7 +120,7 @@
 
 .team-pic {
 	/*TEAM PICTURE WITH DIRECTOR*/
-	background: url('../resources/images/iste-landscape.jpeg') no-repeat center center fixed;
+	background: url('../resources/images/team.JPG') no-repeat center center fixed;
 	height: 400px;
 	position: relative;
 	background-size: cover;
@@ -146,7 +146,6 @@
 		#0f2027
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding: 0.5em;
-	margin-top: 2em;
 	.aboutus-card {
 		background: rgba(0, 0, 0, 0.3);
 		width: 80%;
@@ -228,7 +227,7 @@
 }
 
 @media only screen and (min-width: 720px) {
-	// ================ ABOUT US =================
+// ================ ABOUT US =================
 	.corporate-section {
 		padding: 1em auto;
 		.aboutus-card {
@@ -236,5 +235,71 @@
 			margin: 2em;
 			width: 20%;
 		}
+	}
+}
+
+
+// =============== GUIDING LIGHT ================
+.container {
+	padding: 64px;
+}
+.section-row{
+	background: rgba(220,220,220,0.4);
+	margin-top:1px;
+	align-content: center;
+}
+.section-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.section-heading{
+	h1{
+	text-align: center;
+	margin-top:10px;
+	}
+}
+.section-content{
+	font-size:20px;
+	margin-top:50px;
+	text-align: justify;
+}
+.column-lg-66{
+	float: left;
+	width: 66.666%;
+	padding: 100px;
+}
+.column-sm-33{
+	float: left;
+	width: 33.333%;
+	padding:30px;
+	margin-top:50px;
+	img {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		align-self: auto;
+		box-shadow: 5px 5px 5px #808080;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.column-lg-66,
+	.column-sm-33{
+		width:100%;
+		text-align: center;
+		padding:40px;
+	}
+	img{
+		margin: auto;
+	}
+}
+@media screen and (max-width: 1400px) and (min-width: 700px){
+	.column-lg-66,
+	.column-sm-33{
+		max-height: 100%;
+		padding:40px;
+		display: inline;
+
 	}
 }
