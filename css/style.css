@@ -2578,10 +2578,15 @@ input:-internal-autofill-selected {
   margin-top: 60px;
 }
 
+.service_part .service_text {
+  border: 2px solid #8d00ff;
+  padding: 1.3em;
+}
+
 @media (max-width: 991px) {
   /* line 17, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
   .service_part .service_text {
-    margin-top: 25px;
+      margin-top: 25px;
   }
 }
 
@@ -2785,6 +2790,7 @@ input:-internal-autofill-selected {
 /************Team css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
 .about_us {
+  margin-top: 20em;
   position: relative;
   z-index: 99;
 }
