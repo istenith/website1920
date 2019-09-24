@@ -2341,7 +2341,7 @@ input:-internal-autofill-selected {
 .banner_part {
   height: 950px;
   position: relative;
-  background-image: url(../img/banner_img.png);
+  background-image: url(../img/banner_drone.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2368,6 +2368,11 @@ input:-internal-autofill-selected {
   }
 }
 
+.banner_part img {
+  width: 50vw;
+  height: 50vh;
+}
+
 /* line 21, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
 .banner_part .banner_text {
   display: table;
@@ -2377,9 +2382,13 @@ input:-internal-autofill-selected {
 }
 
 /* line 26, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
-.banner_part .banner_text .banner_text_iner {
+.banner_part .banner_text .banner_text_iner{
   display: table-cell;
   vertical-align: middle;
+}
+
+.banner_part .banner_text .banner_text_iner h3 {
+  color: white;
 }
 
 @media (max-width: 991px) {
@@ -4113,7 +4122,7 @@ input:-internal-autofill-selected {
 /**************** intro_video css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
 .intro_video_bg {
-  background-image: url("../img/intro_video_bg.png");
+  background-image: url("../img/news.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
