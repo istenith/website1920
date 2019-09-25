@@ -530,7 +530,7 @@ input:-internal-autofill-selected {
   font-size: 16px;
   font-weight: 700;
   color: #8d00ff;
-  background-color: #fff;
+  background-color: white;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -2191,14 +2191,15 @@ input:-internal-autofill-selected {
 .main_menu .btn_2 {
   padding: 10.5px 39px;
   margin-left: 55px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
+  color: #7f00ff;
+  border: none;
+  /* background-color: #ff; */
+  /* border: 1px solid #fff; */
 }
 
 /* line 90, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
 .main_menu .btn_2:hover {
-  border: 1px solid transparent;
+  color: #fff;
 }
 
 /* line 97, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
@@ -2816,12 +2817,47 @@ input:-internal-autofill-selected {
   color: #f5790b;
 }
 
+
+/***********ISTE AFTER VIDEO**************/
+#iste_video {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 5em auto;
+}
+
+#iste_video iframe {
+  border: none;
+  margin: 0;
+  width: 48em;
+  height: 27em;
+}
+
+@media (max-width: 991px) {
+  .iste_video iframe {
+    width: 32em;
+    height: 18em;
+  }
+}
+
+@media (max-width: 576px) {
+  .iste_vide  o iframe {
+    width: 24em;
+    height: 13.5em;
+  }
+}
+
 /************Team css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
 .about_us {
-  margin-top: 20em;
+  margin-top: 10em;
   position: relative;
   z-index: 99;
+}
+
+.about_us .container {
+  width: 100vw;
+  padding: 0;
 }
 
 /* line 6, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
@@ -6841,6 +6877,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
+.breadcrumb h2 {
+  color: #fff;
+  font-family: serif;
+  font-size: 6em;
+}
+
+#pstatement {
+  width: fit-content;
+}
+
+#pstatement img {
+  width: 100vw;
+}
+
+
 /* line 9, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_breadcrumb.scss */
 .breadcrumb:after {
   position: absolute;
@@ -6849,9 +6900,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   content: "";
-  background-image: -moz-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
-  background-image: -webkit-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
-  background-image: -ms-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
+  background: #23232d;
+  /* background-image: -moz-linear-gradient(-89deg, #580099 0%, #9300ff 100%);
+   */
+  /* background-image: -webkit-linear-gradient(-89deg, #580099 0%, #9300ff 10
+  0%); */
+  /* background-image: -ms-linear-gradient(-89deg, #580099 0%, #9300ff 100%); */
   opacity: 0.8;
   z-index: -1;
 }
@@ -6915,6 +6969,79 @@ h1, h2, h3, h4, h5, h6 {
 /* line 70, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_breadcrumb.scss */
 .breadcrumb {
   margin-bottom: 0px !important;
+}
+
+#rules-and-perks {
+  background: #23232d;
+  width: 100%;
+  height: fit-content;
+  padding: 4em 0; 
+}
+
+.rules, .perks {
+  margin: 2em 0;
+  padding: 0.5em;
+}
+
+.rules img, .perks img {
+  display: inline;
+  width: 20px;
+  left: 50px;
+  top: 5px;
+}
+
+.rules li, .perks li {
+  margin: 1em 0;
+}
+
+.rules li p, .perks li p {
+  color: #23232d;
+  display: inline;
+  font-size: 1.5em;
+}
+
+.perks li p {
+  font-size: 1.3em;
+}
+
+/********************* Contact Us **********************/
+#contact_us_hult {
+  width: 100vw;
+  height: fit-content;
+  padding: 3em 0;
+  background: #d4167b;
+}
+
+#contact_us_hult h1, #contact_us_hult h3 {
+  color: white;
+}
+
+form input, form textarea {
+  border: none;
+  padding: 0.5em;
+  font-size: 1.2em;
+  display: block;
+  margin: 1em 0;
+  padding-left: 1em;
+  width: 60%;
+}
+
+form textarea {
+  height: 80px;
+}
+
+form button {
+  padding: 0.3em 2em;
+  font-size: 1.2em;
+  background: none;
+border: 2px solid #fff;
+  transition: 0.2s;
+  color: #fff;
+}
+
+form button:hover {
+  background: #fff;
+  color: #000;
 }
 
 /**********************footer part css*******************/
