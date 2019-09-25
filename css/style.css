@@ -5,6 +5,10 @@
   background-image: linear-gradient(to left, #7f00ff 0%, #e100ff 50%, #7f00ff 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /**************** common css start ****************/
 /* line 3, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_common.scss */
 body {
