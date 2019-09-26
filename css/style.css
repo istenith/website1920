@@ -6834,12 +6834,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #pstatement {
   width: fit-content;
+  margin: 3em auto;
 }
 
 #pstatement img {
-  width: 100vw;
+  width: 50vw;
 }
 
+@media only screen and (max-width: 576px) {
+  #pstatement img {
+    width: 100vw;
+  }
+}
 
 /* line 9, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_breadcrumb.scss */
 .breadcrumb:after {
@@ -6933,7 +6939,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rules img, .perks img {
-  display: inline;
+  display: inline-block;
   width: 20px;
   left: 50px;
   top: 5px;
@@ -6946,13 +6952,14 @@ h1, h2, h3, h4, h5, h6 {
 .rules li p, .perks li p {
   color: #23232d;
   display: inline;
-  font-size: 1.5em;
+  font-size: 16pt;
 }
 
-.perks li p {
-  font-size: 1.3em;
+@media only screen and (max-width: 576px) {
+  #rules-and-perks img {
+    transform: rotateZ(90deg) scaleX(0.7);
+  }
 }
-
 /********************* Contact Us **********************/
 #contact_us_hult {
   width: 100vw;
@@ -6964,6 +6971,7 @@ h1, h2, h3, h4, h5, h6 {
 #contact_us_hult h1, #contact_us_hult h3 {
   color: white;
 }
+
 
 form input, form textarea {
   border: none;
@@ -6983,7 +6991,7 @@ form button {
   padding: 0.3em 2em;
   font-size: 1.2em;
   background: none;
-border: 2px solid #fff;
+  border: 2px solid #fff;
   transition: 0.2s;
   color: #fff;
 }
@@ -6991,6 +6999,13 @@ border: 2px solid #fff;
 form button:hover {
   background: #fff;
   color: #000;
+}
+
+@media only screen and (max-width: 576px) {
+  form input, form textarea, form * {
+    width: 100%;
+  }
+
 }
 
 /**********************footer part css*******************/
