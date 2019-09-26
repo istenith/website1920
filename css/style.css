@@ -7,6 +7,8 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 /**************** common css start ****************/
@@ -14,7 +16,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
-  margin: 0;
   font-size: 14px;
 }
 
@@ -2834,14 +2835,14 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 991px) {
-  .iste_video iframe {
+  #iste_video iframe {
     width: 32em;
     height: 18em;
   }
 }
 
 @media (max-width: 576px) {
-  .iste_vide  o iframe {
+  #iste_video iframe {
     width: 24em;
     height: 13.5em;
   }
@@ -2856,8 +2857,8 @@ input:-internal-autofill-selected {
 }
 
 .about_us .container {
-  width: 100vw;
-  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* line 6, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
