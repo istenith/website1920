@@ -3,8 +3,9 @@
     background-size: cover;
     padding: 3em 0;
     height: fit-content;
-    /* top: -5px; */
+    top: -10px;
     position: relative;
+    border-radius: 0;
 }
 
 /* .contact-main {
@@ -38,4 +39,17 @@
 }
 .coc-main .card h3, .coc-main .card h4 {
     margin: 1.2em 0;
+}
+
+.coc-main ol {
+    color: #23232d;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.coc-main li ol {
+    list-style-type: disc;
 }
