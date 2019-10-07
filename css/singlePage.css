@@ -1,0 +1,55 @@
+.head-banner {
+    background: url(../img/background-timeline.svg);
+    background-size: cover;
+    padding: 3em 0;
+    height: fit-content;
+    top: -10px;
+    position: relative;
+    border-radius: 0;
+}
+
+/* .contact-main {
+    background: #23232d;
+    width: 100%;
+    height: fit-content;
+    padding: 2em 0;
+} */
+
+.contact-main .card, .coc-main .card {
+    padding: 2em;
+    opacity: 0.85;
+}
+
+.contact-main .card .text-center h3{
+    color: #d4167b;
+}
+
+.contact-main .card hr {
+    background: #d4167b;
+}
+
+.coc-main .card li img {
+    display: inline;
+    width: 25px;
+    top: 5px;
+    margin: 1.2em 0;
+}
+.coc-main .card li p {
+    display: inline;
+}
+.coc-main .card h3, .coc-main .card h4 {
+    margin: 1.2em 0;
+}
+
+.coc-main ol {
+    color: #23232d;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.coc-main li ol {
+    list-style-type: disc;
+}
