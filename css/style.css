@@ -2414,7 +2414,6 @@ input:-internal-autofill-selected {
 
 /* line 26, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
 .banner_part .banner_text .banner_text_iner{
-  display: table-cell;
   vertical-align: middle;
 }
 
@@ -2825,18 +2824,18 @@ input:-internal-autofill-selected {
 
 /***********ISTE AFTER VIDEO**************/
 #iste_video {
-  width: fit-content;
+  display: flex;
+  width: 100%;
   height: fit-content;
-  padding: 0;
-  margin: 5em auto;
+
 }
 
 #iste_video iframe {
-  box-shadow: 0 0 20px 0px #23232d;
+  margin: 5em auto;
   border: none;
-  margin: 0;
   width: 48em;
   height: 27em;
+  box-shadow: 0 0 20px 0px #23232d;
 }
 
 @media (max-width: 991px) {
